@@ -6858,6 +6858,11 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+list-diff2@0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/list-diff2/-/list-diff2-0.1.4.tgz#8539c05c579b424b1349a34be78508d3920df958"
+  integrity sha1-hTnAXFebQksTSaNL54UI05IN+Vg=
+
 load-json-file@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/load-json-file/-/load-json-file-2.0.0.tgz#7947e42149af80d696cbf797bcaabcfe1fe29ca8"
@@ -9835,6 +9840,13 @@ simple-swizzle@^0.2.2:
   integrity sha1-pNprY1/8zMoz9w0Xy5JZLeleVXo=
   dependencies:
     is-arrayish "^0.3.1"
+
+simple-virtual-dom@^0.1.10:
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/simple-virtual-dom/-/simple-virtual-dom-0.1.10.tgz#ce5ca006708ccf79ed606e2161a97edcb8ec6e60"
+  integrity sha512-mZvtF8cSkjdzPmyWbCPCQiSTs9QAOUQWRYUnsa0j0K7vFwuD/QAEA3pR1ZQb8+ai9l82K7BvmODXHFNAVu962Q==
+  dependencies:
+    list-diff2 "0.1.4"
 
 sisteransi@^1.0.5:
   version "1.0.5"

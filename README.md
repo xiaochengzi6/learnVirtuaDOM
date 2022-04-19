@@ -149,6 +149,9 @@ int min(int a, int b, int c) {
 }
 ~~~
 
-参考文章 [详解一道经典面试题：编辑距离](https://zhuanlan.zhihu.com/p/80682302)
+## 参考文章 
+1. [详解一道经典面试题：编辑距离](https://zhuanlan.zhihu.com/p/80682302)
 
-[字符串相似度算法（编辑距离算法 Levenshtein Distance）](https://www.cnblogs.com/ivanyb/archive/2011/11/25/2263356.html)
+2. [字符串相似度算法（编辑距离算法 Levenshtein Distance）](https://www.cnblogs.com/ivanyb/archive/2011/11/25/2263356.html)
+
+3. [深度剖析：如何实现一个 Virtual DOM 算法 - 作者：戴嘉华](https://github.com/livoras/blog/issues/13)

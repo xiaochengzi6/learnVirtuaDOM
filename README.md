@@ -1,5 +1,52 @@
+有这样一段程序
+
+~~~js
+let foo = createElement('ul', { class: 'list' }, [
+  createElement('li', { class: 'item' }, ['1']),
+  createElement('li', { class: 'item' }, ['2']),
+  createElement('li', { class: 'item' }, ['3'])
+])
+~~~
+
 ## element.js
-用来生成 js 对象模拟 dom 树
+我们使用 `createElement` 函数来将其用 js 对象去模拟 dom 树 这样就能间接的操作 dom 
+~~~js
+{
+    "type": "ul",
+    "props": {
+        "class": "list"
+    },
+    "children": [
+        {
+            "type": "li",
+            "props": {
+                "class": "item"
+            },
+            "children": [
+                "1"
+            ]
+        },
+        {
+            "type": "li",
+            "props": {
+                "class": "item"
+            },
+            "children": [
+                "2"
+            ]
+        },
+        {
+            "type": "li",
+            "props": {
+                "class": "item"
+            },
+            "children": [
+                "3"
+            ]
+        }
+    ]
+}
+~~~
 ~~~js
 function createElement(type, props, children) {} => {} /*返回的对象存储这 模拟的dom树*/
 ~~~
@@ -35,8 +82,11 @@ function patch() {} => /*返回一个修改好的dom*/
 Virtual DOM 算法主要是实现上面步骤的三个函数：element，diff，patch。然后就可以实际的进行使用。
 
 1、使用 `element.js` 生成虚拟节点产出虚拟 dom 树也就是 js 对象表示的 dom 树。
+
 2、使用 `diff.js` 进行深度优先的比对工作 将差异存放起来
+
 3、使用 `patch.js` 将 diff 中的差异提取出来在以同样的方式遍历然后找到对应的差异并应用上
+
 
 ## 最小编辑距离 -- > Levenshtein Distance 算法
 
